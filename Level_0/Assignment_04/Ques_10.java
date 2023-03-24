@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/*
+ Ques10. Highest Common Factor 
+ Write a program to find the greatest common factor of given 2 integers. 
+ 
+ Input Format: First line contains space separated three integer input n,m. 
+ Output Format: Print greatest common factor of 2 numbers. 
+ 
+ Sample Input: 10 20 
+ Sample Output: 10
+ */
+
+public class Ques_10 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the number : ");
+		int n = scan.nextInt();
+		int m = scan.nextInt();
+		scan.close();
+		int count = 0;
+		for (int i = 1; i <= n; i++) {
+			if (n % i == 0 && m % i == 0) {
+				count = i;
+			}
+		}
+		System.out.print(count + " ");
+
+	}
+
+}
